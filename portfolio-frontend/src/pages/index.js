@@ -1,17 +1,20 @@
-import Link from 'next/link'
-import styles from '../styles/Home.module.css'
+// pages/index.js
+import Layout from '../components/Layout';
+import Head from 'next/head';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <h1>My Portfolio</h1>
-      <nav className={styles.nav}>
-        <Link href="/">Home</Link> |{' '}
-        <Link href="/projects">Projects</Link> |{' '}
-        <Link href="/about">About</Link> |{' '}
-        <Link href="/certifications">Certifications</Link>
-      </nav>
-      <p>Welcome to my portfolio website! Explore my projects and learn more about my work.</p>
-    </div>
-  )
+    <Layout>
+      <Head>
+        <title>Home - Gaurav's Portfolio</title>
+      </Head>
+      <div className="hero">
+        <h1>Welcome to Gaurav's Portfolio!</h1>
+        <p>Built using Django API and Nextjs, this showcases my projects and certifications.</p>
+        <a className="btn" href="/projects">
+          View Projects
+        </a>
+      </div>
+    </Layout>
+  );
 }
