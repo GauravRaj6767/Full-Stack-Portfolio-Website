@@ -1,0 +1,23 @@
+/* styles/Certifications.module.css */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.certList {
+    list-style: none;
+    padding: 0;
+}
+
+.certItem {
+    padding: 1rem;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.certItem:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}

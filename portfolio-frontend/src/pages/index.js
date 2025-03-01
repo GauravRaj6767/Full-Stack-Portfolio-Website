@@ -8,7 +8,8 @@ export default function Home() {
       <nav className={styles.nav}>
         <Link href="/">Home</Link> |{' '}
         <Link href="/projects">Projects</Link> |{' '}
-        <Link href="/about">About</Link>
+        <Link href="/about">About</Link> |{' '}
+        <Link href="/certifications">Certifications</Link>
       </nav>
       <p>Welcome to my portfolio website! Explore my projects and learn more about my work.</p>
     </div>
